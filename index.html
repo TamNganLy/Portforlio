@@ -14,7 +14,7 @@
   </head>
   <body>
     <!-- Header -->
-    <section class="gradient-background">
+    <section class="gradient-background header">
       <div class="container" bis_skin_checked="1">
         <header class="d-flex justify-content-center py-3">
           <ul class="nav nav-pills">
@@ -36,17 +36,17 @@
         </header>
       </div>
     </section>
-    <!-- 
-    A hero section that provides a brief introduction to you and your background. 
-    A resume button that link to Capstone project 1
-    -->
-    <section id="hero" class="">
+    <!-- Hero section -->
+    <section id="hero" class="hero">
       <div class="container">
         <div
-          class="row flex-lg-row-reverse align-items-center g-5 py-5"
+          class="row flex-lg-row-reverse align-items-center g-5 pt-5"
           bis_skin_checked="1"
         >
-          <div class="col-10 col-sm-8 col-lg-6 my-profile-container" bis_skin_checked="1" >
+          <div
+            class="col-10 col-sm-8 col-lg-6 my-profile-container"
+            bis_skin_checked="1"
+          >
             <svg
               aria-label="Placeholder"
               class="d-block mx-lg-auto img-fluid bd-placeholder-img rounded-circle profile-background profile-background-item1"
@@ -54,12 +54,7 @@
               role="img"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Placeholder</title>
-              <rect
-                width="100%"
-                height="100%"
-                fill="var(--third-color)"
-              ></rect>
+              <rect width="100%" height="100%" fill="var(--third-color)"></rect>
             </svg>
             <svg
               aria-label="Placeholder"
@@ -68,7 +63,6 @@
               role="img"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <title>Placeholder</title>
               <rect
                 width="100%"
                 height="100%"
@@ -109,10 +103,186 @@
     </section>
 
     <!-- A section that showcases any projects or work that you have done in the past. -->
-    <section id="projects"></section>
+    <section id="projects" class="my-project-container">
+      <div class="container" id="custom-cards" bis_skin_checked="1">
+        <h2 class="py-2 border-bottom">Projects</h2>
+        <div class="album py-5 " bis_skin_checked="1">
+          <div class="container" bis_skin_checked="1">
+            <div
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3"
+              bis_skin_checked="1"
+            >
+              <div class="col" bis_skin_checked="1">
+                <div class="card shadow-sm" bis_skin_checked="1">
+                  <img src="./images/project1.png" height="225" width="100%"/>
+                  <div class="card-body" bis_skin_checked="1">
+                    <h3 class="fw-bold text-body-emphasis project-name">SOP Website</h3>
+                    <p class="card-text project-card">
+                      Technical Skills: React, Next.js, CSS
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                      bis_skin_checked="1"
+                    >
+                      <div class="btn-group" bis_skin_checked="1">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Detail
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a href="https://github.com/TamNganLy/sop-web-app" class="nav-link">Github</a>
+                        </button>
+                      </div>
+                      <small class="text-body-secondary">July 2025</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" bis_skin_checked="1">
+                <div class="card shadow-sm" bis_skin_checked="1">
+                  <img src="./images/project2.png" height="225" width="100%"/>
+                  <div class="card-body" bis_skin_checked="1">
+                    <h3 class="fw-bold text-body-emphasis project-name">KeyLink</h3>
+                    <p class="card-text project-card">
+                      Technical Skills: React, Node.js, JavaScript, TypeScript
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                      bis_skin_checked="1"
+                    >
+                      <div class="btn-group" bis_skin_checked="1">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Detail
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a href="https://github.com/meow-developer/CS-160" class="nav-link">Github</a>
+                        </button>
+                      </div>
+                      <small class="text-body-secondary">May 2024</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" bis_skin_checked="1">
+                <div class="card shadow-sm" bis_skin_checked="1">
+                  <img src="./images/project3.png" height="225" width="100%"/>
+                  <div class="card-body" bis_skin_checked="1">
+                    <h3 class="fw-bold text-body-emphasis project-name">PDF-to-Excel</h3>
+                    <p class="card-text project-card">
+                      Technical Skills: Python
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                      bis_skin_checked="1"
+                    >
+                      <div class="btn-group" bis_skin_checked="1">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Detail
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a href="https://github.com/TamNganLy/pdf_to_excel" class="nav-link">Github</a>
+                        </button>
+                      </div>
+                      <small class="text-body-secondary">September 2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" bis_skin_checked="1">
+                <div class="card shadow-sm" bis_skin_checked="1">
+                  <img src="./images/project4.png" height="225" width="100%"/>
+                  <div class="card-body" bis_skin_checked="1">
+                    <h3 class="fw-bold text-body-emphasis project-name">Youtube Clone</h3>
+                    <p class="card-text project-card">
+                      Technical Skills: HTML, CSS
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                      bis_skin_checked="1"
+                    >
+                      <div class="btn-group" bis_skin_checked="1">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Detail
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a href="https://github.com/TamNganLy/TamLy-YouTube-Clone" class="nav-link">Github</a>
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a href="https://tamnganly.github.io/TamLy-YouTube-Clone/" class="nav-link">Website</a>
+                        </button>
+                      </div>
+                      <small class="text-body-secondary">June 2023</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col" bis_skin_checked="1">
+                <div class="card shadow-sm" bis_skin_checked="1">
+                  <img src="./images/project5.png" height="225" width="100%"/>
+                  <div class="card-body" bis_skin_checked="1">
+                    <h3 class="fw-bold text-body-emphasis project-name">Mancala Game</h3>
+                    <p class="card-text project-card">
+                      Technical Skills: Java, Java GUI.
+                    </p>
+                    <div
+                      class="d-flex justify-content-between align-items-center"
+                      bis_skin_checked="1"
+                    >
+                      <div class="btn-group" bis_skin_checked="1">
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          Detail
+                        </button>
+                        <button
+                          type="button"
+                          class="btn btn-sm btn-outline-secondary"
+                        >
+                          <a href="https://github.com/TamNganLy/Mancala-Game" class="nav-link">Github</a>
+                        </button>
+                      </div>
+                      <small class="text-body-secondary">December 2022</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- An about me section that provides additional information about you and your interests. (maybe quote of the day) -->
-    <section id="about"></section>
+    <section id="about">
+      
+    </section>
 
     <!-- A contact me section -->
     <section id="contact"></section>
