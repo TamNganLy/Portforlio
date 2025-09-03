@@ -1,9 +1,16 @@
 :root {
-  --primary-color: #285430;
+  /* --primary-color: #285430;
   --secondary-color: #5F8D4E;
   --third-color: #C86B85;
   --primary-background: #E5D9B6;
   --secondary-background: #A4BE7B;
+  --third-background: #FFDFDF;
+  --pink: #E6A4B4; */
+  --primary-color: #064232;
+  --secondary-color: #568F87;
+  --third-color: #C86B85;
+  --primary-background: #000000;
+  --secondary-background: #FFF5F2;
   --third-background: #FFDFDF;
   --pink: #E6A4B4;
 }
@@ -24,19 +31,24 @@ body {
   padding-top: 75px;
 }
 
+.hero-small-text {
+  color: var(--secondary-background);
+}
+
 .gradient-background {
-  background: linear-gradient(300deg, var(--primary-background), var(--primary-color), var(--secondary-color));
+  background: linear-gradient(300deg, var(--secondary-background), var(--pink), var(--secondary-color));
   background-size: 180% 190%;
   animation: gradient-animation 18s ease infinite;
 }
 
 .gradient-background-1 {
-  background: linear-gradient(300deg,
-    var(--primary-background) 0%,
-    var(--secondary-color) 35%,
-    var(--secondary-background) 90%
+  /* background: linear-gradient(300deg,
+    var(--pink) 25%,
+    var(--secondary-background) 80%,
+    var(--secondary-color)
   );
-  background-size: 180% 190%;
+  background-size: 180% 190%; */
+  background-color: var(--secondary-color);
 }
 
 .my-nav-link{
@@ -66,7 +78,7 @@ body {
 }
 
 .name {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .btn-primary:hover, .btn-primary:active{
@@ -76,7 +88,7 @@ body {
 }
 
 .btn-primary{
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--primary-background);
   border-color: var(--primary-color);
 }
@@ -137,8 +149,8 @@ body {
 }
 
 .btn-outline-secondary:hover {
-  border-color: var(--third-color);
-  background-color: var(--third-color);
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
 .project-name {
@@ -147,13 +159,21 @@ body {
 
 .my-card {
   padding: 20px;
-  background-color: var(--secondary-background);
-  border-color: var(--secondary-background);
+  /* background-color: var(--secondary-background); */
+  border-color: var(--primary-background);
 }
 
 .my-about {
   background-color: var(--primary-background) !important;
   border: 10px dashed var(--third-color);
+}
+
+.about-title {
+  color: var(--secondary-color) !important;
+}
+
+.about-text {
+  color: var(--secondary-background) !important;
 }
 
 .footer-container {
@@ -168,7 +188,7 @@ body {
   position: absolute;
   top: 35%;
   z-index: -1;
-  background-color: var(--secondary-background);
+  background-color: var(--primary-color);
 }
 
 .contact-container {
@@ -176,22 +196,27 @@ body {
 }
 
 .contact-box {
-  background-color: var(--third-background) !important;
+  /* background-color: var(--third-background) !important; */
   background: linear-gradient(300deg, var(--third-background), var(--pink), var(--third-color));
   background-size: 180% 180%;
   animation: gradient-animation 18s ease infinite;
+}
 
+.contact-box h2 {
+  color: var(--primary-background) !important;
 }
 
 .contact-box p {
   font-size: 1rem;
+  color: var(--primary-background);
 }
 
 .media-container {
-  background-color: var(--primary-background);
+  background-color: var(--secondary-background);
   font-size: 1rem;
   padding: 5px 20px 5px 5px !important;
   color: black;
+  text-decoration: none;
 }
 
 .tech-skill-container {
