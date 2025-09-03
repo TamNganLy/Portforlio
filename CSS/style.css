@@ -4,12 +4,8 @@
   --third-color: #C86B85;
   --primary-background: #E5D9B6;
   --secondary-background: #A4BE7B;
-  --third-background: #F3D7CA;
-  /* --primary-color: #064232;
-  --secondary-color: #568F87;
-  --third-color: #C86B85;
-  --primary-background: #E5D9B6;
-  --secondary-background: #F5BABB; */
+  --third-background: #FFDFDF;
+  --pink: #E6A4B4;
 }
 
 body {
@@ -30,16 +26,27 @@ body {
 
 .gradient-background {
   background: linear-gradient(300deg, var(--primary-background), var(--primary-color), var(--secondary-color));
-  background-size: 180% 180%;
+  background-size: 180% 190%;
   animation: gradient-animation 18s ease infinite;
+}
+
+.gradient-background-1 {
+  background: linear-gradient(300deg,
+    var(--primary-background) 0%,
+    var(--secondary-color) 35%,
+    var(--secondary-background) 90%
+  );
+  background-size: 180% 190%;
 }
 
 .my-nav-link{
   color: var(--primary-background);
+    font-weight: bold;
 }
 
 .my-nav-link:hover {
-  color: var(--secondary-background);
+  color: var(--primary-color);
+  font-weight: bold;
 }
 
 .my-active {
@@ -49,7 +56,8 @@ body {
 }
 
 .my-active:hover {
-  color: var(--secondary-color);
+  color: var(--primary-background);
+  background-color: var(--third-color);
   font-weight: bold;
 }
 
@@ -105,11 +113,11 @@ body {
 }
 
 .my-project-container {
-  /* background-color: color-mix(in srgb, var(--third-background) 100%, transparent); */
   padding-top: 75px;
 }
 
 .border-bottom {
+  color: var(--third-color);
   border-bottom-color: var(--primary-color) !important;
 }
 
@@ -119,7 +127,8 @@ body {
 }
 
 .card-body {
-  background-color: var(--secondary-background);
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .btn-outline-secondary {
@@ -134,4 +143,61 @@ body {
 
 .project-name {
   color: var(--primary-color) !important;
+}
+
+.my-card {
+  padding: 20px;
+  background-color: var(--secondary-background);
+  border-color: var(--secondary-background);
+}
+
+.my-about {
+  background-color: var(--primary-background) !important;
+  border: 10px dashed var(--third-color);
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+
+.footer-background {
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  top: 35%;
+  z-index: -1;
+  background-color: var(--secondary-background);
+}
+
+.contact-container {
+  padding-top: 50px !important;
+}
+
+.contact-box {
+  background-color: var(--third-background) !important;
+  background: linear-gradient(300deg, var(--third-background), var(--pink), var(--third-color));
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+
+}
+
+.contact-box p {
+  font-size: 1rem;
+}
+
+.media-container {
+  background-color: var(--primary-background);
+  font-size: 1rem;
+  padding: 5px 20px 5px 5px !important;
+  color: black;
+}
+
+.tech-skill-container {
+  background-color: var(--third-color);
+  font-size: 1rem;
+  padding: 10px !important;
+  color: var(--third-background);
+  font-weight: 400;
 }
