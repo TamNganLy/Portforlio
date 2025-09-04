@@ -12,9 +12,9 @@
     />
     <link rel="stylesheet" href="./CSS/style.css" />
   </head>
-  <body>
+  <body class="gradient-background light-mode">
     <!-- Header -->
-    <section class="gradient-background header">
+    <section class="header">
       <div class="container" bis_skin_checked="1">
         <header class="d-flex justify-content-center py-3">
           <ul class="nav nav-pills">
@@ -54,7 +54,11 @@
               role="img"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="100%" height="100%" fill="var(--third-color)"></rect>
+              <rect
+                width="100%"
+                height="100%"
+                fill="var(--secondary-color)"
+              ></rect>
             </svg>
             <svg
               aria-label="Placeholder"
@@ -66,7 +70,7 @@
               <rect
                 width="100%"
                 height="100%"
-                fill="var(--secondary-color)"
+                fill="var(--primary-background)"
               ></rect>
             </svg>
             <img
@@ -117,7 +121,12 @@
                   class="card shadow-sm my-card gradient-background-1"
                   bis_skin_checked="1"
                 >
-                  <img src="./images/project1.png" height="225" width="100%" class="rounded-3 project-img"/>
+                  <img
+                    src="./images/project1.png"
+                    height="225"
+                    width="100%"
+                    class="rounded-3 project-img"
+                  />
                   <div class="card-body" bis_skin_checked="1">
                     <h3 class="fw-bold text-body-emphasis project-name">
                       SOP Website
@@ -176,7 +185,12 @@
                   class="card shadow-sm my-card gradient-background-1"
                   bis_skin_checked="1"
                 >
-                  <img src="./images/project2.png" height="225" width="100%" class="rounded-3 project-img" />
+                  <img
+                    src="./images/project2.png"
+                    height="225"
+                    width="100%"
+                    class="rounded-3 project-img"
+                  />
                   <div class="card-body" bis_skin_checked="1">
                     <h3 class="fw-bold text-body-emphasis project-name">
                       KeyLink
@@ -234,7 +248,12 @@
                   class="card shadow-sm my-card gradient-background-1"
                   bis_skin_checked="1"
                 >
-                  <img src="./images/project3.png" height="225" width="100%" class="rounded-3 project-img" />
+                  <img
+                    src="./images/project3.png"
+                    height="225"
+                    width="100%"
+                    class="rounded-3 project-img"
+                  />
                   <div class="card-body" bis_skin_checked="1">
                     <h3 class="fw-bold text-body-emphasis project-name">
                       PDF-to-Excel
@@ -285,7 +304,12 @@
                   class="card shadow-sm my-card gradient-background-1"
                   bis_skin_checked="1"
                 >
-                  <img src="./images/project4.png" height="225" width="100%" class="rounded-3 project-img" />
+                  <img
+                    src="./images/project4.png"
+                    height="225"
+                    width="100%"
+                    class="rounded-3 project-img"
+                  />
                   <div class="card-body" bis_skin_checked="1">
                     <h3 class="fw-bold text-body-emphasis project-name">
                       Youtube Clone
@@ -353,7 +377,12 @@
                   class="card shadow-sm my-card gradient-background-1"
                   bis_skin_checked="1"
                 >
-                  <img src="./images/project5.png" height="225" width="100%" class="rounded-3 project-img" />
+                  <img
+                    src="./images/project5.png"
+                    height="225"
+                    width="100%"
+                    class="rounded-3 project-img"
+                  />
                   <div class="card-body" bis_skin_checked="1">
                     <h3 class="fw-bold text-body-emphasis project-name">
                       Mancala Game
@@ -408,26 +437,106 @@
       </div>
     </section>
 
-    <!-- An about me section that provides additional information about you and your interests. (maybe quote of the day) -->
+    <!-- About me -->
     <section id="about">
-      <div class="container my-5" bis_skin_checked="1">
+      <div class="container mb-5 my-about" bis_skin_checked="1">
         <h2 class="py-2 border-bottom">About Me</h2>
         <div
-          class="p-5 text-center bg-body-tertiary rounded-3 my-about"
+          class="p-5 text-center bg-body-tertiary rounded-3 my-about-container"
           bis_skin_checked="1"
         >
-          <h2 class="text-body-emphasis fw-bold about-title">Quote of the day</h2>
-          <p class="lead about-text">
-            “The future belongs to those who believe in the beauty of their
-            dreams.”
-          </p>
-          <small class="text-body-secondary about-text"> - Eleanor Roosevelt</small>
+          <div class="my-quote">
+            <h2 class="text-body-emphasis fw-bold about-title">
+              My Quote of the Day
+            </h2>
+            <p class="lead about-text">
+              “The future belongs to those who believe in the beauty of their
+              dreams.”
+            </p>
+            <small class="text-body-secondary about-text">
+              - Eleanor Roosevelt</small
+            >
+          </div>
+          <h2 class="text-body-emphasis fw-bold about-title">My Hobbies</h2>
+          <div class="row hobbies-container" bis_skin_checked="1">
+            <div class="col-lg-4" bis_skin_checked="1">
+              <svg
+                class="bd-placeholder-img hobbies-bg hobbies-bg-1"
+                height="220"
+                width="220"
+              >
+                <rect width="100%" height="100%"></rect>
+              </svg>
+              <img
+                src="./images/hobby-1.jpg"
+                alt="drawing"
+                width="240"
+                height="240"
+                class="rounded-circle mb-4"
+              />
+              <h2 class="fw-normal">Drawing</h2>
+              <p>
+                “Art enables us to find ourselves and lose ourselves at the same
+                time.”
+                <small class="text-body-secondary about-text">
+                  — Thomas Merton</small
+                >
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4" bis_skin_checked="1">
+              <svg
+                class="bd-placeholder-img hobbies-bg hobbies-bg-2"
+                height="120"
+                width="470"
+              >
+                <rect width="100%" height="100%"></rect>
+              </svg>
+              <img
+                src="./images/hobby-2.jpg"
+                alt="crotcheting"
+                width="240"
+                height="240"
+                class="rounded-circle mb-4"
+              />
+              <h2 class="fw-normal">Crotcheting</h2>
+              <p>
+                “The hand that works with the heart creates beauty that lasts.”
+                <small class="text-body-secondary about-text"> — Unknown</small>
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+            <div class="col-lg-4" bis_skin_checked="1">
+              <svg
+                class="bd-placeholder-img hobbies-bg hobbies-bg-3"
+                height="320"
+                width="170"
+              >
+                <rect width="100%" height="100%"></rect>
+              </svg>
+              <img
+                src="./images/hobby-3.jpg"
+                alt="watching movies"
+                width="240"
+                height="240"
+                class="rounded-circle mb-4"
+              />
+              <h2 class="fw-normal">Watching Movies</h2>
+              <p>
+                “Films are little journeys that whisk you away and leave a
+                gentle mark on the heart.”
+                <small class="text-body-secondary about-text"> — Unknown</small>
+              </p>
+            </div>
+            <!-- /.col-lg-4 -->
+          </div>
         </div>
+        <div></div>
         <h2 class="py-2 border-bottom"></h2>
       </div>
     </section>
 
-    <!-- A contact me section -->
+    <!-- Contact me -->
     <section id="contact">
       <div class="footer-container">
         <div class="footer-background"></div>
@@ -438,7 +547,7 @@
           >
             <h2 class="text-body-emphasis fw-bold">Let's connect!</h2>
             <p class="lead my-0">
-              Reach out at <strong>info@gmail.com</strong>
+              Reach out at <strong class="gmail">info@gmail.com</strong>
             </p>
             <p class="lead">Or reach out via social media below</p>
             <div
