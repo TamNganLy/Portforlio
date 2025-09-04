@@ -9,7 +9,7 @@
   --primary-color: #064232;
   --secondary-color: #568F87;
   --third-color: #C86B85;
-  --primary-background: #000000;
+  --primary-background: #1a1b1c;
   --secondary-background: #FFF5F2;
   --third-background: #FFDFDF;
   --pink: #E6A4B4;
@@ -126,6 +126,10 @@ body {
 
 .my-project-container {
   padding-top: 75px;
+}
+
+.project-img {
+  object-fit: cover;
 }
 
 .border-bottom {
