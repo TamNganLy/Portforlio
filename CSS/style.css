@@ -40,6 +40,12 @@
   --light: #BBE1FA;
 }
 
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color: var(--primary-background);
 }
@@ -342,5 +348,45 @@ body {
   .hobbies-bg-3 {
     top: 52%;
     left: 65%;
+    width: 165px;
+  }
+}
+
+@media (max-width: 475px) {
+  .hobbies-bg-1 {
+    top: 16%;
+    left: -5%;
+  }
+
+  .hobbies-bg-2 {
+    top: 42%;
+    left: -4%;    
+    width: 275px;
+  }
+
+  .hobbies-bg-3 {
+    top: 50%;
+    left: 65%;
+    width: 100px;
+  }
+
+  .profile-background-item1 {
+    top: -10%;
+    opacity: 75%;              
+    height: 250px;
+    width: 250px;
+    box-shadow: 0 0 50px var(--primary-color);
+  }
+
+  .profile-background-item2 {
+    top: 35%;
+    left: 35%;
+    opacity: 80%;              
+    height: 250px;
+    width: 250px;
+  }
+
+  .nav-link {
+    padding: 8px 10px;
   }
 }
