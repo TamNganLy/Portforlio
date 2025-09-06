@@ -227,17 +227,24 @@ body {
   top: 18%;
   left: 16%;
   z-index: -1;
+  height: 220px;
+  width: 220px;
 }
 
 .hobbies-bg-2 {
   top: 25%;
   left: 30%;
+  z-index: 0;
+  height: 120px;
+  width: 470px;
 }
 
 .hobbies-bg-3 {
   top: -8%;
   left: 68%;
   z-index: -1;
+  height: 320px;
+  width: 170px;
 }
 
 .hobbies-bg>rect {
@@ -296,4 +303,44 @@ body {
   padding: 10px !important;
   color: var(--primary-color);
   font-weight: 450;
+}
+
+.front {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 990px) {
+  .hobbies-bg-1 {
+    top: 16%;
+    left: 16%;
+  }
+
+  .hobbies-bg-2 {
+    top: 45%;
+    left: 8%;
+  }
+
+  .hobbies-bg-3 {
+    top: 52%;
+    left: 65%;
+  }
+}
+
+@media (max-width: 765px) {
+  .hobbies-bg-1 {
+    top: 16%;
+    left: 16%;
+  }
+
+  .hobbies-bg-2 {
+    top: 42%;
+    left: 8%;    
+    width: 370px;
+  }
+
+  .hobbies-bg-3 {
+    top: 52%;
+    left: 65%;
+  }
 }
